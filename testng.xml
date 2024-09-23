@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/harsh/OneDrive/Desktop/testing/automation_testing/KyariAuromation/src/test/java/com/kyari/qa/testcases/HomePageTest.java"><classes><class name="com.kyari.qa.testcases.HomePageTest"><methods><include name="clickCorporateGiftingTest"/><include name="clickPlantConsultationTest"/><include name="clickCustomerSupportTest"/><include name="clickJadePlantTest"/><include name="greenDelightTextTest"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.kyari.qa.listner.Listner"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/harsh/OneDrive/Desktop/testing/automation_testing/KyariAuromation/src/test/java/com/kyari/qa/testcases/HomePageTest.java"><classes><class name="com.kyari.qa.testcases.HomePageTest"><methods><include name="clickCorporateGiftingTest"/><include name="clickPlantConsultationTest"/><include name="clickCustomerSupportTest"/><include name="clickJadePlantTest"/><include name="greenDelightTextTest"/></methods></class></classes></test></suite>
