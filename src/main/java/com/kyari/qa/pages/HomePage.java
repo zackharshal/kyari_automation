@@ -25,6 +25,11 @@ public class HomePage extends TestBase{
     @FindBy(xpath = "//span[text()='Lucky Jade Plant']")
     WebElement jadePlant;
 
+    @FindBy(xpath = "//h1[contains(text(),\"Lucky Jade Plant\")]")
+    WebElement textJade;
+
+    @FindBy(xpath = "//h2[contains(text(), \"Shop Our Green Delights\")]")
+    WebElement greenDelight;
 
     public HomePage(){
         PageFactory.initElements(driver,this);
@@ -52,12 +57,12 @@ public class HomePage extends TestBase{
     public String clickJadePlant(){
         jadePlant.click();
         logger.info("Jade Plant validated");
-        return driver.findElement(By.xpath("//h1[contains(text(),\"Lucky Jade Plant\")]")).getText();
+        return textJade.getText();
 
     }
 
     public String greenDelightText(){
         logger.info("Green delight text validated");
-        return driver.findElement(By.xpath("//h2[contains(text(), \"Shop Our Green Delights\")]")).getText();
+        return greenDelight.getText();
     }
 }

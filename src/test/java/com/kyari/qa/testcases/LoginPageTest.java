@@ -1,15 +1,17 @@
 package com.kyari.qa.testcases;
 
 import com.kyari.qa.base.TestBase;
+import com.kyari.qa.listner.Listner;
 import com.kyari.qa.pages.HomePage;
 import com.kyari.qa.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-
+@Listeners(Listner.class)
 public class LoginPageTest extends TestBase {
 
     LoginPage loginPage;

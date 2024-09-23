@@ -22,7 +22,7 @@ public class TestBase {
     public static Logger logger;
 
     public ExtentReports report = new ExtentReports();
-    public ExtentSparkReporter spark = new ExtentSparkReporter("");
+    public ExtentSparkReporter spark = new ExtentSparkReporter("report.html");
 
     public TestBase(){
         PropertyConfigurator.configure("src/main/java/com/kyari/qa/config/log4j.properties");
@@ -51,5 +51,4 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.get(prop.getProperty("url"));
     }
-
 }

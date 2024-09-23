@@ -1,4 +1,54 @@
 2024-09-18 16:02:30 INFO  LoginPage:38 - Login page validated
   2024-09-18 16:18:50 INFO  LoginPage:38 - Login page validated
   2024-09-18 18:18:27 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:07:39 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:07:54 INFO  HomePage:36 - Corporate Gifting validated
+  2024-09-19 15:08:56 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:09:10 INFO  HomePage:36 - Corporate Gifting validated
+  2024-09-19 15:10:14 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:10:26 INFO  HomePage:42 - Plant Consultation validated
+  2024-09-19 15:11:34 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:11:45 INFO  HomePage:42 - Plant Consultation validated
+  2024-09-19 15:12:35 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:12:47 INFO  HomePage:42 - Plant Consultation validated
+  2024-09-19 15:13:50 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:14:01 INFO  HomePage:42 - Plant Consultation validated
+  2024-09-19 15:14:52 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:15:05 INFO  HomePage:42 - Plant Consultation validated
+  2024-09-19 15:40:23 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:40:39 INFO  HomePage:53 - Customer Support validated
+  2024-09-19 15:41:18 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:41:36 INFO  HomePage:53 - Customer Support validated
+  2024-09-19 15:43:05 INFO  LoginPage:48 - Login validated
+  2024-09-19 15:43:20 INFO  HomePage:53 - Customer Support validated
+  2024-09-19 15:53:40 INFO  Listner:19 - Test case startedloginPageValidation
+  2024-09-19 15:53:41 WARN  Listner:44 - Test case Skipped loginPageValidation
+  2024-09-19 15:53:41 INFO  Listner:19 - Test case startedkyariLogoTest
+  2024-09-19 15:53:41 WARN  Listner:44 - Test case Skipped kyariLogoTest
+  2024-09-19 15:53:41 INFO  Listner:19 - Test case startedloginTest
+  2024-09-19 15:53:41 WARN  Listner:44 - Test case Skipped loginTest
+  2024-09-19 15:53:41 INFO  Listner:52 - flushed the Extent report.
+  2024-09-19 15:59:55 INFO  Listner:19 - Test case startedloginPageValidation
+  2024-09-19 15:59:57 INFO  LoginPage:35 - Login page validated
+  2024-09-19 15:59:57 INFO  Listner:27 - Test case passedloginPageValidation
+  2024-09-19 16:00:16 INFO  Listner:19 - Test case startedkyariLogoTest
+  2024-09-19 16:00:16 INFO  LoginPage:40 - Kyari image validated
+  2024-09-19 16:00:18 INFO  Listner:27 - Test case passedkyariLogoTest
+  2024-09-19 16:00:39 INFO  Listner:19 - Test case startedloginTest
+  2024-09-19 16:00:47 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:00:55 INFO  Listner:27 - Test case passedloginTest
+  2024-09-19 16:00:56 INFO  Listner:51 - flushed the Extent report.
+  2024-09-19 16:44:56 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:46:59 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:47:31 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:48:08 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:51:26 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:52:03 INFO  LoginPage:48 - Login validated
+  2024-09-19 16:52:39 INFO  LoginPage:48 - Login validated
+  2024-09-19 17:35:36 INFO  LoginPage:48 - Login validated
+  2024-09-19 17:35:45 INFO  DataProviderLogin:51 - Test pass
+  2024-09-19 17:36:14 INFO  LoginPage:48 - Login validated
+  2024-09-19 17:36:24 INFO  DataProviderLogin:56 - Failed test pass
+  2024-09-19 17:36:53 INFO  LoginPage:48 - Login validated
+  2024-09-19 17:37:02 INFO  DataProviderLogin:56 - Failed test pass
   

@@ -23,16 +23,17 @@ public class CustomerSupport extends TestBase {
     }
 
     public String checkAddress(){
+        logger.info("Gets the address");
         return address.getText();
     }
 
-    //Address: 1115, Skye Earth Corporate Park AB Rd Indore, Madhya Pradesh 452010
     public String checkPhoneNumber(){
+        logger.info("Gets the phone number");
         return phoneNumber.getText();
     }
-    //+91 8376885182
+
     public String checkEmail(){
+        logger.info("Gets the info");
         return email.getText();
     }
-    //support@kyari.co
 }

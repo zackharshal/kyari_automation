@@ -1,47 +1,55 @@
 package com.kyari.qa.listner;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.kyari.qa.base.TestBase;
+import com.kyari.qa.util.TestUtil;
+import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listner implements ITestListener {
+public class Listner extends TestBase implements ITestListener {
+    public static Logger logger = Logger.getLogger(Listner.class);
+    TestUtil testUtil;
+    ExtentTest test;
+
     @Override
     public void onTestStart(ITestResult result) {
-        ITestListener.super.onTestStart(result);
+        logger.info("Test case started" +result.getName());
+        report.attachReporter(spark);
+        test=report.createTest(result.getName());
+        test.log(Status.INFO,"The test case is started " + result.getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        ITestListener.super.onTestSuccess(result);
+        logger.info("Test case passed" +result.getName());
+        test=report.createTest(result.getName());
+        test.log(Status.PASS,"The test case is started" + result.getName());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        ITestListener.super.onTestFailure(result);
+        logger.error("Test case failed" +result.getName());
+        test=report.createTest(result.getName());
+        test.log(Status.FAIL,"The test case is started" + result.getName());
+        testUtil=new TestUtil();
+        testUtil.takeScreenshotFailure(driver);
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        ITestListener.super.onTestSkipped(result);
-    }
+        logger.warn("Test case Skipped " +result.getName());
+        test=report.createTest(result.getName());
+        test.log(Status.SKIP,"The test case is started" + result.getName());
 
-    @Override
-    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
-    }
-
-    @Override
-    public void onTestFailedWithTimeout(ITestResult result) {
-        ITestListener.super.onTestFailedWithTimeout(result);
-    }
-
-    @Override
-    public void onStart(ITestContext context) {
-        ITestListener.super.onStart(context);
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        ITestListener.super.onFinish(context);
+        logger.info("flushed the Extent report." );
+        report.flush();
+
     }
 }

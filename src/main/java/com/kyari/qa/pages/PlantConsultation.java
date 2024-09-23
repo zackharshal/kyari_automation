@@ -31,19 +31,23 @@ public class PlantConsultation extends TestBase {
 
     public void selectDate(){
         todaysDot.click();
+        logger.info("Click the date");
     }
 
     public String meetingSchedulerName(){
+        logger.info("Gets the name of Meeting scheduler");
         return name.getText();
     }
 
     public String selectTimeZone(){
         timeZone.click();
         selectTimeZone.click();
+        logger.info("Selects the time zone");
         return selectTimeZone.getText();
     }
 
     public void clickGoToNextMonth(){
         goToNextMonth.click();
+        logger.info("Click on the next month");
     }
 }

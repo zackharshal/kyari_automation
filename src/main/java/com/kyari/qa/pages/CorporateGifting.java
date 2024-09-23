@@ -56,15 +56,18 @@ public class CorporateGifting extends TestBase {
         enterCompanyName.sendKeys("Bridgelabz");
         enterCustomisation.sendKeys("No need");
         clickSubmit.click();
+        logger.info("Get quote executed");
     }
 
     public String clickLipStickPlant(){
         lipStickPlant.click();
+        logger.info("Title of lipstick plant validated");
         return driver.getTitle();
     }
 
     public String clickEnquireNow(){
         enquireNow.click();
+        logger.info("Checks if the enquires button works or not");
         return faq.getText();
     }
 }
